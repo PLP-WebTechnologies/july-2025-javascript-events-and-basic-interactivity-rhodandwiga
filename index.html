@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>🌟 Interactive Web Page with JavaScript 🌟</h1>
+    <button id="themeToggle" class="btn">🌙 Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Part 1: Event Handling -->
+    <section class="card">
+      <h2>🎮 Counter Game</h2>
+      <p>Click the button to increase the counter:</p>
+      <div class="counter-box">
+        <button id="counterBtn" class="btn">➕ Increase</button>
+        <span id="counterValue" class="counter-value">0</span>
+      </div>
+    </section>
+
+    <!-- Part 2: Interactive Element -->
+    <section class="card">
+      <h2>❓ FAQ Section</h2>
+      <div class="faq">
+        <button class="faq-question">What is JavaScript?</button>
+        <div class="faq-answer">JavaScript makes web pages dynamic and interactive.</div>
+
+        <button class="faq-question">What is DOM?</button>
+        <div class="faq-answer">DOM is the Document Object Model, a representation of the page.</div>
+      </div>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section class="card">
+      <h2>📝 Registration Form</h2>
+      <form id="registerForm" class="form">
+        <label>Name:
+          <input type="text" id="name" placeholder="Enter your name">
+          <span class="error" id="nameError"></span>
+        </label>
+
+        <label>Email:
+          <input type="text" id="email" placeholder="Enter your email">
+          <span class="error" id="emailError"></span>
+        </label>
+
+        <label>Password:
+          <input type="password" id="password" placeholder="Enter your password">
+          <span class="error" id="passwordError"></span>
+        </label>
+
+        <button type="submit" class="btn submit-btn">Register</button>
+      </form>
+      <p id="formSuccess" class="success"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>🚀 Built with ❤️ and JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
